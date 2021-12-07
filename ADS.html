@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Steven H. ePortfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="index.html">Algorithms and Data Structure</a></h1>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<div class="inner">
+				<h2>Menu</h2>
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="SDE.html">Software Design and Engineering</a></li>
+					<li><a href="ADS.html">Algorithms and Data Structure</a></li>
+					<li><a href="DB.html">Database Management</a></li>
+				</ul>
+				<a href="#" class="close">Close</a>
+			</div>
+		</nav>
+
+		<!-- Wrapper -->
+		<section id="wrapper">
+			<header>
+				<div class="inner">
+					<h2>Original</h2>
+					<p>While the original WeightTracker lacked all the functions needed to make it a useful application, there was not much security incorporated into it.  
+						The original login screen did function, however, it utilized the systems cache to only store one username and password that was written in by the 
+						register new user feature.  Furthermore, there was nothing in place that could encrypt and decrypt data as it was in transit or at rest.
+					</p>
+				</div>
+			</header>
+
+			<!-- Content -->
+			<div class="wrapper">
+				<div class="inner">
+
+					<h3 class="major">Expansion</h3>
+
+					<p>I expanded the capabilities of the weight tracker app by creating encrypt/decrypt code that is modular 
+						and can be utilized by multiple functions within the code. By having this security there is room for growth 
+						in the form of online database interactions, additional user information, and control of data presented to the user.</p>
+
+					<h3 class="major">Forms of Security</h3>
+
+					<section class="features">
+						<article>
+							<a href="#" class="image"><img src="images/encryption.jpg" alt="" /></a>
+							<h3 class="major">AES Encryption</h3>
+							<p>The user table currently utilizes AES encryption to encode and decode information while it as at rest.
+								Utilizing AES encryption on this application helps to maintain its low memory usage and provides fast 
+								encryption and decryption times.
+							</p>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="images/sql.jpg" alt="" /></a>
+							<h3 class="major">SQL Injection</h3>
+							<p>In order to add another layer of security, all data entry points limit what the user can input.  Dates are broken up by year,
+								month, day, and are limited to numbers only and within a specific range.  Username and passwords don't present much of a danger since
+								 the information inputted is encrypted prior to entering the database.  All of this is in place to prevent potential SQL Injection attacks.
+							</p>
+						</article>
+					</section>
+
+				</div>
+
+			</div>
+
+		</section>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Steven H. ePortfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="index.html">Software Design and Engineering</a></h1>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<div class="inner">
+				<h2>Menu</h2>
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="SDE.html">Software Design and Engineering</a></li>
+					<li><a href="ADS.html">Algorithms and Data Structure</a></li>
+					<li><a href="DB.html">Database Management</a></li>
+				</ul>
+				<a href="#" class="close">Close</a>
+			</div>
+		</nav>
+
+		<!-- Wrapper -->
+		<section id="banner">
+			<header>
+				<div class="inner">
+					<h2>Original</h2>
+					<p>To properly demonstrate proficiency in Software Design and Engineering, I wanted to rework my 
+						first iteration of the WeightTracker application written in Java. Since this artifact was incomplete, 
+						only had a login screen that accepted any username/password, generic weight history screen, and no 
+						database functionality. Not only was this application sufficient in displaying technical skills, but 
+						it also provides the opportunity to show other aspects of design by creating a user interface that is 
+						light weight, simple, and efficient at completing tasks that the user needs to complete their objective. 
+						With this artifact, there were two objectives that I wanted to show proficiency in the ability 
+						to design and evaluate computing solutions that solve a given problem using algorithmic principles, 
+						and the ability to use well-founded and innovative techniques, skills, and tools in computing 
+						practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific 
+						goals.
+					</p>
+				</div>
+			</header>
+		</section>
+
+		<section id="wrapper">
+			
+			<!-- Content -->
+			<section id="one" class="wrapper spotlight style1">
+				<div class="inner">
+					<a href="#" class="image"><img src="images/Login.jpg" alt="" /></a>
+					<div class="content">
+						<h2 class="major">Login Screen</h2>
+						<p>Created a functioning login screen that verifies an existing user's credentials
+							This screen also gives the new option to register a new user and limits the login
+							attempts to five before shutting down the login button.  As an additional security measure, 
+							the user's information is encrypted prior to database entry.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="two" class="wrapper alt spotlight style2">
+				<div class="inner">
+					<a href="#" class="image"><img src="images/Recycler.jpg" alt="" /></a>
+					<div class="content">
+						<h2 class="major">Daily Weight</h2>
+						<p>Setup a recycler view that pulls from a user-unique table within the database to display their daily
+							weights along with the calorie deficit for that day.  Prior to the recycler view being updated, the database is organized
+							so that the newest entry is the first one available.  New entries are done in a popup window as to limit the amount of required activities.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="three" class="wrapper spotlight style3">
+				<div class="inner">
+					<a href="#" class="image"><img src="images/Goal.jpg" alt="" /></a>
+					<div class="content">
+						<h2 class="major">Goal Screen</h2>
+						<p>Keeping with the design choice of keeping things simple, this screen is limited to progress bar that shows their current weight goal, 
+							a functioning progress bar, and a text percentage for them to view. I also brought in a field for the user to update their goal so 
+							that the application can continue to be functional even after the user has reached their current goal. While the screen is simple, 
+							there is a lot going on in the code as I had to incorporate more database CRUD operations, data verification with tables, and algorithmic 
+							principles to take multiple variables and provide an accurate value for goal completion.
+						</p>
+					</div>
+				</div>
+			</section>
+
+		</section>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

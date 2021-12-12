@@ -48,9 +48,9 @@
 			<header>
 				<div class="inner">
 					<h2>Original</h2>
-					<p>While the original WeightTracker lacked many of the functions needed to make it a useful application, there was not much security incorporated into it.  
-						The original login screen did function, however, it utilized the system's cache to only store one username and password that was written in by the 
-						register new user feature.  Furthermore, there was nothing in place that could encrypt and decrypt data as it was in transit or at rest.
+					<p>Originally the WeightTracker application lacked important security measures and was not developed with a security mindset.  
+						Initially the program utilized the system's cache to only store one username and password that was written in by the 
+						register new user feature and lacked encryption of the username and password after it was stored in the database.
 					</p>
 				</div>
 			</header>
@@ -62,7 +62,7 @@
 					<h3 class="major">Expansion</h3>
 
 					<p>I expanded the capabilities of the weight tracker app by creating encrypt/decrypt code that is modular 
-						and can be utilized by multiple functions within the code. By having this security, there is room for growth 
+						and can be utilized by multiple functions within the code. By having this security measure in place, there is room for growth 
 						in the form of online database interactions, additional user information, and control of data presented to the user.</p>
 
 					<h3 class="major">Forms of Security</h3>
@@ -81,7 +81,7 @@
 							<h3 class="major">SQL Injection</h3>
 							<p>In order to add another layer of security, all data entry points limit what the user can input.  Dates are broken up by year,
 								month, day, and are limited to numbers only and within a specific range.  Username and passwords don't present much of a danger since
-								 the information inputted is encrypted prior to entering the database.  All of this is in place to prevent potential SQL Injection attacks.
+								 the information utilized is encrypted prior to entering the database.
 							</p>
 						</article>
 					</section>
